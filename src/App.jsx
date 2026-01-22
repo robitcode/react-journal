@@ -11,6 +11,7 @@ import AvatarStack from './day-1/AvatarStack'
 import ExpandingAvatars from './day-1/ExpandingAvatars'
 import UserTable from './day-1/UserTable'
 import ToDoComponent from './day-1/ToDoComponent'
+import StudyCard from './day-2/StudyCard'
 
 function App() {
   const [selectedId, setSelectedId] = useState("todo");
@@ -20,7 +21,7 @@ function App() {
     {
       "day": "Day 1",
       "components": [
-        { "id": "todo", "name": "Todo List", "component": <ToDoComponent /> },
+        { "id": "todo", "name": "Todo List", "component": <ToDoComponent />},
         { "id": "card", "name": "Status Card", "component": <StatusCard /> },
         { "id": "first", "name": "First Component", "component": <FirstComponent /> },
         { "id": "second", "name": "Second Component", "component": <SecondComponent /> },
@@ -29,6 +30,7 @@ function App() {
         { "id": "notif", "name": "Notification Badge", "component": <NotificationBadge /> },
         { "id": "table", "name": "User Table", "component": <UserTable /> },
         { "id": "searchinp", "name": "Search Input", "component": <SearchInput /> },
+        { "id": "studycard", "name": "StudyCard", "component": <StudyCard /> }
       ]
     }
   ];
